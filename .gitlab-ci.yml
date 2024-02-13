@@ -1,0 +1,6 @@
+deploy:
+  stage: deploy
+  script: 
+    - npx vercel --name=portfolio --token=$TOKEN --prod --yes
+  only: 
+    - main
