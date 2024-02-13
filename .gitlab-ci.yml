@@ -1,4 +1,5 @@
 deploy:
+  image: node:21.6.1
   stage: deploy
   script: 
     - npx vercel --name=portfolio --token=$TOKEN --prod --yes
